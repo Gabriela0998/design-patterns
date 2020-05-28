@@ -1,0 +1,5 @@
+public class FactoryUser {
+    User getUser(String name) {
+        return new User(name);
+    }
+}

@@ -1,0 +1,17 @@
+package Chat.factory;
+
+import Chat.participants.Bot;
+import Chat.participants.User;
+
+public abstract class FactoryParticipant {
+    public FactoryUser factoryUser;
+    public FactoryBot factoryBot;
+
+    public User getUser(String name) {
+        return factoryUser.getUser(name);
+    }
+
+    public Bot getBot() {
+        return factoryBot.getBot();
+    }
+}
